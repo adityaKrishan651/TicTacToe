@@ -3,8 +3,8 @@ class Board:
 		self.player1 = name1
 		self.player2 = name2
 		self.board = [[{1: " "}, {2: " "}, {3: " "}],
-					  [{4: " "}, {5: " "}, {6: " "}],
-					  [{7: " "}, {8: " "}, {9: " "}]]
+			      [{4: " "}, {5: " "}, {6: " "}],
+			      [{7: " "}, {8: " "}, {9: " "}]]
 
 	def fill(self, key, symbol):
 		self.key = key
@@ -47,9 +47,6 @@ class Board:
 
 		elif (self.board[0][2][3] == self.board[1][1][5] == self.board[2][0][7] == "X") or (self.board[0][2][3] == self.board[1][1][5] == self.board[2][0][7] == "O"):
 			winner = self.board[0][2][3]
-
-
-
 
 		return winner
 		
